@@ -9,6 +9,7 @@
     <title>Sadrul's Portfolio</title>
     <!-- font icons -->
     <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
+    <link rel="icon" href="{{ asset('assets/imgs/sadrul_logo.svg') }}" type="image/x-icon">
     <!-- Bootstrap + Meyawo main styles -->
     <link rel="stylesheet" href="assets/css/meyawo.css">
 </head>
@@ -18,7 +19,7 @@
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="#">Meyawo</a>
+            <a class="logo" href="/">Sadrul's Portfolio</a>
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Dashboard</a>
@@ -192,7 +193,7 @@
     </section> <!-- end of portfolio section -->
 
     <!-- pricing section -->
-    <section class="section" id="pricing">
+    {{-- <section class="section" id="pricing">
         <div class="container text-center">
             <p class="section-subtitle">How Much I Charge ?</p>
             <h6 class="section-title mb-6">My Pricing</h6>
@@ -267,7 +268,7 @@
 
             </div><!-- end of pricing wrapper -->
         </div> <!-- end of container -->
-    </section><!-- end of pricing section -->
+    </section><!-- end of pricing section --> --}}
 
     <!-- section -->
     <section class="section-sm bg-primary">
@@ -420,8 +421,7 @@
         <footer class="footer">
             <p class="mb-0">Copyright
                 <script>document.write(new Date().getFullYear())</script> &copy; <a
-                    href="http://www.devcrud.com">DevCRUD</a> Distribution <a
-                    href="https://themewagon.com">ThemeWagon</a>
+                    href="#">MS Sadrul Pasha Chowdhury</a>
             </p>
             <div class="social-links text-right m-auto ml-sm-auto">
                 <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
