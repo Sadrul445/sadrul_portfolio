@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\ProfileController;
+use App\Http\Controllers\ProjectController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,12 +17,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('layouts.portfolio.master');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -30,5 +31,6 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::get('/download-cv',[DownloadController::class])->name('download.cv');
+Route::get('/project',[ProjectController::class,'index'])->name('project.index');
 
 require __DIR__.'/auth.php';

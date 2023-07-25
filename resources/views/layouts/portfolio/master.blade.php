@@ -7,190 +7,38 @@
     <meta name="description" content="Start your development with Meyawo landing page.">
     <meta name="author" content="Devcrud">
     <title>Sadrul's Portfolio</title>
-    <!-- font icons -->
-    <link rel="stylesheet" href="assets/vendors/themify-icons/css/themify-icons.css">
     <link rel="icon" href="{{ asset('assets/imgs/sadrul_logo.svg') }}" type="image/x-icon">
+    @includeIf('layouts.portfolio.partials.css')
     <!-- Bootstrap + Meyawo main styles -->
-    <link rel="stylesheet" href="assets/css/meyawo.css">
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
 
     <!-- Page Navbar -->
-    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
-        <div class="container">
-            <a class="logo" href="/">Sadrul's Portfolio</a>
-            <ul class="nav">
-                <li class="item">
-                    <a class="link" href="#home">Dashboard</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#about">About</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#portfolio">Portfolio</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#testmonial">Testmonial</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#blog">Blog</a>
-                </li>
-                <li class="item">
-                    <a class="link" href="#contact">Contact</a>
-                </li>
-                <li class="item ml-md-3">
-                    <a href="components.html" class="btn btn-primary">Components</a>
-                </li>
-            </ul>
-            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
-                <div class="hamburger-box">
-                    <div class="hamburger-inner"></div>
-                </div>
-            </a>
-        </div>
-    </nav><!-- End of Page Navbar -->
+    @includeIf('layouts.portfolio.partials.navbar')
+    <!-- End of Page Navbar -->
 
     <!-- page header -->
-    <header id="home" class="header">
-        <div class="overlay"></div>
-        <div class="header-content container">
-            <h1 class="header-title">
-                <span class="up">HI!</span>
-                <span class="down">I am Sadrul</span>
-            </h1>
-            <p class="header-subtitle">Junior Software Engineer (Backend Development)</p>
-
-            <button class="btn btn-primary">Visit My Works</button>
-        </div>
-    </header><!-- end of page header -->
+    @includeIf('layouts.portfolio.partials.header')
+    <!-- end of page header -->
 
     <!-- about section -->
     <section class="section pt-0" id="about">
         <!-- container -->
-        <div class="container text-center">
-            <!-- about wrapper -->
-            <div class="about">
-                <div class="about-img-holder">
-                    <img src="assets/imgs/sadrul.jpg" class="about-img" style="border-radius:10px;width:70%;box-shadow:5px 40px 50px 1px #666277">
-                </div>
-                <div class="about-caption">
-                    <p class="section-subtitle">Who Am I ?</p>
-                    <h2 class="section-title mb-3">About Me</h2>
-                    <p>
-                        Hello! I'm Tanim, a junior software engineer specialized in backend development using Laravel framework. I excel in creating backend APIs and have extensive experience with e-commerce websites, admin panels, and API development. Proficient in Jira, SDLC, and database diagram schema. Skilled in Agile teamwork and Git version control. Check my portfolio for more details. Thank you!
-                    </p>
-                    <button class="btn-rounded btn btn-outline-primary mt-4" id="downloadButton">Download CV</button>
-                </div>
-            </div><!-- end of about wrapper -->
-        </div><!-- end of container -->
+        @includeIf('layouts.portfolio.partials.about')
+        <!-- end of container -->
     </section> <!-- end of about section -->
 
     <!-- service section -->
     <section class="section" id="service">
-        <div class="container text-center">
-            <p class="section-subtitle">What I Do ?</p>
-            <h6 class="section-title mb-6">Service</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/pencil-case.svg"
-                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                                class="icon">
-                            <h6 class="title">Adipisicing</h6>
-                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
-                                molestias dolorem iste quod.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/responsive.svg"
-                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                                class="icon">
-                            <h6 class="title">Sapiente</h6>
-                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
-                                molestias dolorem iste quod.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/toolbox.svg"
-                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                                class="icon">
-                            <h6 class="title">Placeat</h6>
-                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
-                                molestias dolorem iste quod.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <div class="service-card">
-                        <div class="body">
-                            <img src="assets/imgs/analytics.svg"
-                                alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                                class="icon">
-                            <h6 class="title">Iusto</h6>
-                            <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
-                                molestias dolorem iste quod.</p>
-                        </div>
-                    </div>
-                </div>
-            </div><!-- end of row -->
-        </div>
+        @includeIf('layouts.portfolio.partials.service')
     </section><!-- end of service section -->
 
-    <!-- portfolio section -->
-    <section class="section" id="portfolio">
-        <div class="container text-center">
-            <p class="section-subtitle">What I Did ?</p>
-            <h6 class="section-title mb-6">Portfolio</h6>
-            <!-- row -->
-            <div class="row">
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img src="assets/imgs/folio-1.jpg" class="portfolio-card-img"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Web Designing</h5>
-                                    <p class="font-weight-normal">Category: Web Templates</p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-2.jpg" class="img-responsive rounded"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Web Designing</h5>
-                                    <p class="font-weight-normal">Category: Web Templates</p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <a href="#" class="portfolio-card">
-                        <img class="portfolio-card-img" src="assets/imgs/folio-3.jpg" class="img-responsive rounded"
-                            alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
-                        <span class="portfolio-card-overlay">
-                            <span class="portfolio-card-caption">
-                                <h4>Web Designing</h5>
-                                    <p class="font-weight-normal">Category: Web Templates</p>
-                            </span>
-                        </span>
-                    </a>
-                </div>
-            </div><!-- end of row -->
-        </div><!-- end of container -->
-    </section> <!-- end of portfolio section -->
+    <!-- project section -->
+    <section class="section" id="projects">
+        @includeIf('layouts.portfolio.partials.project')
+        <!-- end of container -->
+    </section> <!-- end of projects section -->
 
     <!-- pricing section -->
     {{-- <section class="section" id="pricing">
@@ -328,7 +176,7 @@
     </section> <!-- end of testimonial section -->
 
     <!-- blog section -->
-    <section class="section" id="blog">
+    {{-- <section class="section" id="blog">
         <!-- container -->
         <div class="container text-center">
             <p class="section-subtitle">Recent Posts?</p>
@@ -388,7 +236,7 @@
             </div><!-- end of blog wrapper -->
 
         </div><!-- end of container -->
-    </section><!-- end of blog section -->
+    </section><!-- end of blog section --> --}}
 
     <!-- contact section -->
     <section class="section" id="contact">
@@ -418,31 +266,11 @@
 
     <!-- footer -->
     <div class="container">
-        <footer class="footer">
-            <p class="mb-0">Copyright
-                <script>document.write(new Date().getFullYear())</script> &copy; <a
-                    href="#">MS Sadrul Pasha Chowdhury</a>
-            </p>
-            <div class="social-links text-right m-auto ml-sm-auto">
-                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
-                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
-            </div>
-        </footer>
+        @includeIf('layouts.portfolio.partials.footer')
     </div> <!-- end of page footer -->
 
     <!-- core  -->
-    <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
-    <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
 
-    <!-- bootstrap 3 affix -->
-    <script src="assets/vendors/bootstrap/bootstrap.affix.js"></script>
-
-    <!-- Meyawo js -->
-    <script src="assets/js/meyawo.js"></script>
     <script>
         document.getElementById('downloadButton').addEventListener('click', function() {
             const cvFilePath = 'assets/cv/M.S.Sadrul_Pasha_Chowdhury_CV_23_07_23.pdf'; // 
@@ -452,6 +280,7 @@
             anchor.click();
         });
     </script>
+    @includeIf('layouts.portfolio.partials.js')
 </body>
 
 </html>
