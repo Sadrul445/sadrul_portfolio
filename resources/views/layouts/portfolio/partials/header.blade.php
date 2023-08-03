@@ -5,8 +5,8 @@
             <span class="up">HI!</span>
             <span class="down">I am Sadrul</span>
         </h1>
-        <p class="header-subtitle">Junior Software Engineer (Backend Development)</p>
-
+        <p class="header-subtitle" >Junior Software Engineer<strong> - Backend</strong></p>
         <button class="btn btn-primary">Visit My Works</button>
     </div>
 </header>
+
