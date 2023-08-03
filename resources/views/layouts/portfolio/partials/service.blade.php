@@ -7,9 +7,9 @@
             <div class="service-card">
                 <div class="body">
                     <img src="assets/imgs/pencil-case.svg"
-                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                        alt=""
                         class="icon">
-                    <h6 class="title">Adipisicing</h6>
+                    <h6 class="title">Software Development</h6>
                     <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
                         molestias dolorem iste quod.</p>
                 </div>
@@ -19,9 +19,9 @@
             <div class="service-card">
                 <div class="body">
                     <img src="assets/imgs/responsive.svg"
-                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
-                        class="icon">
-                    <h6 class="title">Sapiente</h6>
+                        alt=""
+                        class="icon" >
+                    <h6 class="title">Web Design</h6>
                     <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
                         molestias dolorem iste quod.</p>
                 </div>
@@ -31,9 +31,9 @@
             <div class="service-card">
                 <div class="body">
                     <img src="assets/imgs/toolbox.svg"
-                        alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
+                        alt=""
                         class="icon">
-                    <h6 class="title">Placeat</h6>
+                    <h6 class="title">Database Schema Design</h6>
                     <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
                         molestias dolorem iste quod.</p>
                 </div>
@@ -45,7 +45,7 @@
                     <img src="assets/imgs/analytics.svg"
                         alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page"
                         class="icon">
-                    <h6 class="title">Iusto</h6>
+                    <h6 class="title">Api Integration</h6>
                     <p class="subtitle">Labore velit culpa adipisci excepturi consequuntur itaque in nam
                         molestias dolorem iste quod.</p>
                 </div>

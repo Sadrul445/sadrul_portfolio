@@ -12234,7 +12234,16 @@ pre .code {
 }
 
 /* -----------custom-css----------- */
-
+#grad1 {
+  color: #fdd2d2;
+  background: -webkit-linear-gradient(#e6e5e9, #2e1f68);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#box-grad{
+  background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(#e6e5e9, #2e1f68);
+}
 .zoom {
   transition: transform .5s;
   border-radius: 50px;
@@ -12244,6 +12253,7 @@ pre .code {
   transform: scale(1.05);
   border-radius: 50px; 
 }
+
 .row {
   display: flex;
   flex-wrap: wrap;
@@ -12262,3 +12272,56 @@ pre .code {
   vertical-align: middle;
   width: 100%;
 }
+
+.content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  height: 50%;
+  padding: 20px;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+.ksl-bg{
+  position: relative;
+  height: 220vh;
+  min-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-image: url(../imgs/header.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.icons-container {
+  display: flex; /* Use flexbox to display the icons horizontally */
+  justify-content: center; /* Center the icons horizontally within the container */
+  background-color: white;
+  opacity: 0.8;
+}
+
+.icon {
+  width: 50px; /* Adjust the width of the icons as needed */
+  height: 50px; /* Adjust the height of the icons as needed */
+  margin: 0 7px; /* Add some margin between the icons */
+}
+.box-shadow{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/* #projects{
+} */
