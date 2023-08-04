@@ -12205,6 +12205,55 @@ pre .code {
     margin-bottom: 20px;
   }
 }
+/* skill */
+
+.skill {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+}
+
+.skill-img-holder {
+  min-width: 400px;
+  max-width: 400px;
+  margin-right: 20px;
+}
+
+.skill-img-holder .about-img {
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.skill-caption {
+  -webkit-box-flex: 1;
+  -webkit-flex-grow: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+@media (max-width: 767.98px) {
+  .skill {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .skill-img-holder {
+    max-width: 220px;
+    min-width: 100%;
+    width: 100%;
+    margin: auto;
+    margin-bottom: 20px;
+  }
+}
 
 /* sections */
 .section {
@@ -12323,5 +12372,97 @@ pre .code {
 .box-shadow{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+.grid.text-center {
+  display: flex;
+  align-items: center; /* Optional: To vertically center the items */
+}
+
+/* Optional: To create equal spacing between items */
+.grid.text-center > div {
+  flex: 1;
+  margin: 0 5px;
+}
+
+
+input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.accordion-wrapper {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 24px -0.2px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  margin:0 auto;
+}
+@media (max-width: 767.98px){
+  .accordion-wrapper{
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    margin:0 auto;
+  }
+}
+.accordion {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+  margin-bottom: 16px;
+}
+.accordion:last-child{
+  margin-bottom: 0;
+}
+.accordion-label {
+  display: flex;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+  padding: 16px;
+  background:#695aa6 ;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 14px;
+}
+.accordion-label:hover {
+  background: #2a2249 ;
+  transition: all 0.4s;
+}
+.accordion-label::after {
+  content: "\276F";
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+.accordion-content {
+  max-height: 0;
+  padding: 0 16px;
+  color: #6f42c1;
+  background: white;
+  -webkit-transition: all 0.4s;
+  transition: all 0.5s;
+}
+.accordion-content p{
+  margin: 0;
+  color: #2a2249;
+  font-size: 15px;
+  font-weight:600;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+input:checked + .accordion-label {
+  background: #2a2249;
+}
+input:checked + .accordion-label::after {
+  -webkit-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+input:checked ~ .accordion-content {
+  max-height: 50vh;
+  padding: 16px;
+}
+
 /* #projects{
 } */

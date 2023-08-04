@@ -34,7 +34,7 @@
                 <p class="rounded py-2 mx-auto"
                     style="font-weight:400;border-bottom:3px solid #695aa6 ; width:50%;color:#695aa6">
                     Technologies We Use: </p>
-                <div class="icons-container rounded py-2 box-shadow" id="box-grad" {{-- style="background-color: #8377b183" --}}>
+                <div class="icons-container rounded py-2 box-shadow" id="box-grad">
                     <img src="{{ asset('assets/icons/laravel.svg') }}" alt="Laravel Icon" class="icon" />
                     <img src="{{ asset('assets/icons/php.svg') }}" alt="PHP Icon" class="icon" />
                     <img src="{{ asset('assets/icons/sqlite.svg') }}" alt="sqlite Icon" class="icon" />
