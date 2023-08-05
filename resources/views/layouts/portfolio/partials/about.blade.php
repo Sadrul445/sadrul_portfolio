@@ -63,7 +63,7 @@
                     </ul>
                 </div>
             </div>
-            <button class="btn-rounded btn btn-outline-primary mt-4 box-shadow py-3" id="downloadButton"
+            <button class="btn-rounded btn btn-outline-primary mt-4 box-shadow py-3 px-4" id="downloadButton"
                 > <i class="fa-solid fa-download fa-bounce fa-lg"></i> Download CV</button>
         </div>
     </div><!-- end of about wrapper -->

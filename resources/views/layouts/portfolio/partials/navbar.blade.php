@@ -14,8 +14,11 @@
             <li class="item">
                 <a class="link" href="#testmonial">Testmonial</a>
             </li>
-            <li class="item">
+            {{-- <li class="item">
                 <a class="link" href="#blog">Blog</a>
+            </li> --}}
+            <li class="item">
+                <a class="link" href="#skill">Skills</a>
             </li>
             <li class="item">
                 <a class="link" href="#contact">Contact</a>

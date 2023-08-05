@@ -13,7 +13,6 @@
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
-
     <!-- Page Navbar -->
     @includeIf('layouts.portfolio.partials.navbar')
     <!-- End of Page Navbar -->
@@ -131,7 +130,9 @@
                     <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
                 </div>
                 <div class="col-sm offset-sm-2 offset-md-3">
-                    <button class="btn btn-lg my-font btn-light rounded">Hire Me</button>
+                    <a href="#contact">
+                        <button class="box-shadow btn btn-lg my-font btn-light rounded">Hire Me</button>
+                    </a>
                 </div>
             </div> <!-- end of row -->
         </div> <!-- end of container -->
