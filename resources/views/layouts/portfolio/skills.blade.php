@@ -329,7 +329,54 @@
                         </div>
                     </div>
                 </div>
+            </div>      
+        </div>
+        <div class="accordion-item">    
+            <div class="accordion-header py-2" id="flush-headingSeven">
+                <button class="zoom accordion-button collapsed btn btn-primary w-100" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false"
+                    aria-controls="flush-collapseSeven">
+                    <label class="accordion-label float-left" for="check6"><img
+                            src="{{ asset('assets/icons/ides.svg') }}" width="20px" height="20px"
+                            alt="ides Icon" />
+                        Basic Computing & Web Designing<span style="font-size:10px;color:rgb(255, 255, 255)"></span></label>
+                    <i class="fa-solid fa-chevron-down fa-bounce fa-l mt-2 float-right"
+                        style="color: #ffffff;padding-right:10px"></i></button>
             </div>
+            <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven"
+                data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <div class="d-flex flex-wrap">
+                        <div class="col-sm-4">
+                            <ul class="list-unstyled list-inline">
+                                <li><img src="{{ asset('assets/icons/word.svg') }}" alt="word Icon"
+                                        class="icon" /></li>
+                                <span>
+                                    <p>Microsoft Word</p>
+                                </span>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="list-unstyled list-inline">
+                                <li><img src="{{ asset('assets/icons/excel.svg') }}" alt="excel Icon"
+                                        class="icon" /></li>
+                                <span>
+                                    <p>Microsoft Excel</p>
+                                </span>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4">
+                            <ul class="list-unstyled list-inline">
+                                <li><img src="{{ asset('assets/icons/figma.svg') }}" alt="figma Icon"
+                                        class="icon" /></li>
+                                <span>
+                                    <p>Figma</p>
+                                </span>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>      
         </div>
     </div>
 </div>

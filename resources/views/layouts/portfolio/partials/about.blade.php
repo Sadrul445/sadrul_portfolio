@@ -8,17 +8,20 @@
         <div class="about-caption">
             <p class="section-subtitle">Who Am I ?</p>
             <h2 class="section-title mb-3">About Me</h2>
-                <div class="social-links text-center m-auto ml-sm-auto py-4 border-bottom w-50">
-                    <a href="https://www.linkedin.com/in/sadrulpashachowdhury?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BICn5pJoLQceQgMEDCFQKWw%3D%3D"
-                        class="link px-2"><i class="fa-brands fa-linkedin fa-beat fa-xl"></i></a>
-                    <a href="https://www.facebook.com/your_username" class="link px-2"><i class="fa-brands fa-facebook fa-beat fa-xl"></i></a>
-                    <a href="https://www.google.com/your_profile" class="link px-2"><i class="ti-google"></i></a>
-                    <a href="https://www.whatsapp.com/your_username" class="link px-2"><i class="fa-brands fa-whatsapp fa-beat fa-xl"></i></a>
-                    <a href="https://github.com/Sadrul445" class="link px-2"><i class="fa-brands fa-github fa-beat fa-xl"></i></a>
-                    <a href="https://www.instagram.com/your_username" class="link px-2"><i class="ti-instagram"></i></a>
-                    <a href="https://www.your_rss_feed_url.com" class="link px-2"><i class="ti-rss"></i></a>
-                </div>
-            <p class="pt-4">
+            <div class="social-links text-center m-auto ml-sm-auto py-4 border-bottom w-100">
+                <a href="https://www.linkedin.com/in/sadrulpashachowdhury?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BICn5pJoLQceQgMEDCFQKWw%3D%3D"
+                    class="link px-2"><i class="fa-brands fa-linkedin fa-beat fa-xl"></i></a>
+                <a href="https://www.facebook.com/your_username" class="link px-2"><i
+                        class="fa-brands fa-facebook fa-beat fa-xl"></i></a>
+                {{-- <a href="https://www.google.com/your_profile" class="link px-2"><i class="ti-google"></i></a> --}}
+                <a href="https://www.whatsapp.com/your_username" class="link px-2"><i
+                        class="fa-brands fa-whatsapp fa-beat fa-xl"></i></a>
+                <a href="https://github.com/Sadrul445" class="link px-2"><i
+                        class="fa-brands fa-github fa-beat fa-xl"></i></a>
+                {{-- <a href="https://www.instagram.com/your_username" class="link px-2"><i class="ti-instagram"></i></a>
+                <a href="https://www.your_rss_feed_url.com" class="link px-2"><i class="ti-rss"></i></a> --}}
+            </div>
+            <p class="pt-4 text-justify">
                 Hello! I'm Tanim, a junior software engineer specialized in backend development using Laravel framework.
                 I excel in creating backend APIs and have extensive experience with e-commerce websites, admin panels,
                 and API development. Proficient in Jira, SDLC, and database diagram schema. Skilled in Agile teamwork
@@ -54,17 +57,18 @@
                                 Computer Science and Engineering</span></li>
                         <li class="py-2 list-unstyled list-inline"><i class="fa-solid fa-angle-right fa-sm"
                                 style="color: #6f42c1;"></i> <strong class="text-primary">Email:</strong>
-                            <span>tanimchy8@gmail.com</span>
+                            {{-- <span>tanimchy8@gmail.com</span> --}}
+                            <span>sadrulpashachowdhury.edu@gmail.com</span>
                         </li>
                         <li class="py-2 list-unstyled list-inline"><i class="fa-solid fa-angle-right fa-sm"
                                 style="color: #6f42c1;"></i> <strong class="text-primary">Freelance:</strong>
-                            <span>Available</span>
+                            <span style="color: green;font-weight:600">Available</span>
                         </li>
                     </ul>
                 </div>
             </div>
-            <button class="btn-rounded btn btn-outline-primary mt-4 box-shadow py-3 px-4" id="downloadButton"
-                > <i class="fa-solid fa-download fa-bounce fa-lg"></i> Download CV</button>
+            <button class="btn-rounded btn btn-outline-primary mt-4 box-shadow py-3 px-4" id="downloadButton"> <i
+                    class="fa-solid fa-download fa-bounce fa-lg"></i> Download CV</button>
         </div>
     </div><!-- end of about wrapper -->
 </div>

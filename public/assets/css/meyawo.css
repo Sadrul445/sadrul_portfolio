@@ -12685,7 +12685,82 @@ pre .code {
         margin-bottom: 20px;
     }
 }
-
+/*--------------------------------------------------------------
+# Resume
+--------------------------------------------------------------*/
+.resume .resume-title {
+    font-size: 26px;
+    /* font-weight: 700; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #695aa6;
+  }
+  
+  .resume .resume-item {
+    padding: 0 0 20px 20px;
+    margin-top: -2px;
+    border-left: 2px solid #1f5297;
+    position: relative;
+    text-align: left;
+  }
+  
+  .resume .resume-item h4 {
+    line-height: 18px;
+    font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Open Sans", sans-serif;
+    color: black;
+    opacity: 0.6;
+    margin-bottom: 10px;
+  }
+  
+  .resume .resume-item h5 {
+    font-size: 16px;
+    background: #e4edf9;
+    padding: 5px 15px;
+    display: inline-block;
+    font-weight: 600;
+    margin-bottom: 10px;
+  }
+  @media (max-width: 767.98px) {
+    .resume .resume-title{
+        font-size: 16px;
+    }
+    .resume .resume-item h4{
+        font-size: 14px;
+    }
+    .resume .resume-item p{
+        font-size: 12px;
+    }
+    .resume .resume-item ul li{
+        font-size: 12px;
+    }
+  }
+  .resume .resume-item ul {
+    padding-left: 20px;
+  }
+  
+  .resume .resume-item ul li {
+    padding-bottom: 10px;
+  }
+  
+  .resume .resume-item:last-child {
+    padding-bottom: 0;
+  }
+  
+  .resume .resume-item::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50px;
+    left: -9px;
+    top: 0;
+    background: #fff;
+    border: 2px solid #1f5297;
+  }
+  
 /* sections */
 .section {
     padding: 70px 10px;
@@ -12813,88 +12888,6 @@ pre .code {
     flex: 1;
     margin: 0 5px;
 }
-
-/* 
-input {
-  position: absolute;
-  opacity: 0;
-  z-index: -1;
-}
-.accordion-wrapper {
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 24px -0.2px rgba(0, 0, 0, 0.5);
-  width: 50%;
-  margin:0 auto;
-}
-@media (max-width: 767.98px){
-  .accordion-wrapper{
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
-    width: 300px;
-    margin:0 auto;
-  }
-}
-.accordion {
-  width: 100%;
-  color: white;
-  overflow: hidden;
-  margin-bottom: 16px;
-}
-.accordion:last-child{
-  margin-bottom: 0;
-}
-.accordion-label {
-  display: flex;
-  -webkit-box-pack: justify;
-  justify-content: space-between;
-  padding: 16px;
-  background:#695aa6 ;
-  font-weight: bold;
-  cursor: pointer;
-  font-size: 14px;
-}
-.accordion-label:hover {
-  background: #2a2249 ;
-  transition: all 0.4s;
-}
-.accordion-label::after {
-  content: "\276F";
-  width: 16px;
-  height: 16px;
-  text-align: center;
-  -webkit-transition: all 0.4s;
-  transition: all 0.4s;
-}
-.accordion-content {
-  max-height: 0;
-  padding: 0 16px;
-  color: #6f42c1;
-  background: white;
-  -webkit-transition: all 0.4s;
-  transition: all 0.5s;
-}
-.accordion-content p{
-  margin: 0;
-  color: #2a2249;
-  font-size: 15px;
-  font-weight:600;
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-input:checked + .accordion-label {
-  background: #2a2249;
-}
-input:checked + .accordion-label::after {
-  -webkit-transform: rotate(90deg);
-  transform: rotate(90deg);
-}
-input:checked ~ .accordion-content {
-  max-height: 50vh;
-  padding: 16px;
-}
-
 /* #projects{
 } */
 @media (max-width: 767.98px) {
@@ -12921,11 +12914,4 @@ input:checked ~ .accordion-content {
         max-width: 33.33%; /* Three columns in a row for small screens */
         text-align: center; /* Center the content within each column */
     }
-
-    .back-to-top {
-    position: fixed;
-    bottom: 25px;
-    right: 25px;
-    display: none;
-}
   }

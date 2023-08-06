@@ -27,9 +27,16 @@
         @includeIf('layouts.portfolio.partials.about')
         <!-- end of container -->
     </section> <!-- end of about section -->
+    {{-- skill section --}}
     <section class="section pt-0" id="skill">
         @includeIf('layouts.portfolio.skills')
     </section>
+    {{-- end of skill section --}}
+    {{-- resume section --}}
+    <section class="section pt-0" id="resume">
+        @includeIf('layouts.portfolio.resume')
+    </section>
+    {{-- end of resume section --}}
     <!-- service section -->
     <section class="section" id="service">
         @includeIf('layouts.portfolio.partials.service')
