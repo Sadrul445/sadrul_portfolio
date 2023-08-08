@@ -7,7 +7,7 @@
     <meta name="description" content="Start your development with Meyawo landing page.">
     <meta name="author" content="Devcrud">
     <title>Sadrul's Portfolio</title>
-    <link rel="icon" href="{{ asset('assets/imgs/sadrul_logo.svg') }}" type="image/x-icon">
+    <link rel="icon" href="{{ asset('assets/icons/sadrul-logo.ico') }}" type="image/x-icon">
     @includeIf('layouts.portfolio.partials.css')
     <!-- Bootstrap + Meyawo main styles -->
 </head>
@@ -27,16 +27,24 @@
         @includeIf('layouts.portfolio.partials.about')
         <!-- end of container -->
     </section> <!-- end of about section -->
+    <button id="scrollUpButton" class="zoom box-shadow scroll-up-btn" title="Scroll to top">
+        <i class="fas fa-chevron-up fa-bounce fa-lg"></i>
+      </button>
     {{-- skill section --}}
     <section class="section pt-0" id="skill">
         @includeIf('layouts.portfolio.skills')
     </section>
     {{-- end of skill section --}}
     {{-- resume section --}}
-    <section class="section pt-0" id="resume">
+    <section class="section pt-0">
         @includeIf('layouts.portfolio.resume')
     </section>
     {{-- end of resume section --}}
+    {{-- achievement section --}}
+    <section class="section pt-0" id="achievement">
+        @includeIf('layouts.portfolio.achievement')
+    </section>
+    {{-- end of achievement section --}}
     <!-- service section -->
     <section class="section" id="service">
         @includeIf('layouts.portfolio.partials.service')
@@ -129,20 +137,7 @@
     <!-- section -->
     <section class="section-sm bg-primary">
         <!-- container -->
-        <div class="container text-center text-sm-left">
-            <!-- row -->
-            <div class="row align-items-center">
-                <div class="col-sm offset-md-1 mb-4 mb-md-0">
-                    <h6 class="title text-light">Want to work with me?</h6>
-                    <p class="m-0 text-light">Always feel Free to Contact & Hire me</p>
-                </div>
-                <div class="col-sm offset-sm-2 offset-md-3">
-                    <a href="#contact">
-                        <button class="box-shadow btn btn-lg my-font btn-light rounded">Hire Me</button>
-                    </a>
-                </div>
-            </div> <!-- end of row -->
-        </div> <!-- end of container -->
+        @includeIf('layouts.portfolio.partials.hireMe') <!-- end of container -->
     </section> <!-- end of section -->
 
     <!-- testimonial section -->
@@ -250,28 +245,7 @@
 
     <!-- contact section -->
     <section class="section" id="contact">
-        <div class="container text-center">
-            <p class="section-subtitle">How can you communicate?</p>
-            <h6 class="section-title mb-5">Contact Me</h6>
-            <!-- contact form -->
-            <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
-                <div class="form-row">
-                    <div class="form-group col-sm-6">
-                        <input type="text" size="50" class="form-control" placeholder="Your Name" required>
-                    </div>
-                    <div class="form-group col-sm-6">
-                        <input type="email" class="form-control" placeholder="Enter Email" requried>
-                    </div>
-                    <div class="form-group col-sm-12">
-                        <textarea name="comment" id="comment" rows="6" class="form-control"
-                            placeholder="Write Something"></textarea>
-                    </div>
-                    <div class="form-group col-sm-12 mt-3">
-                        <input type="submit" value="Send Message" class="btn btn-outline-primary rounded">
-                    </div>
-                </div>
-            </form><!-- end of contact form -->
-        </div><!-- end of container -->
+        @includeIf('layouts.portfolio.contact.create')
     </section><!-- end of contact section -->
 
     <!-- footer -->
@@ -288,6 +262,25 @@
             anchor.href = cvFilePath;
             anchor.setAttribute('download', 'M.S.Sadrul_Pasha_Chowdhury_CV_23_07_23.pdf');
             anchor.click();
+        });
+    </script>
+    <script>
+        // JavaScript code to show/hide scroll-up button
+        const scrollUpButton = document.getElementById("scrollUpButton");
+
+        window.addEventListener("scroll", function() {
+            if (window.pageYOffset > 300) {
+                scrollUpButton.classList.add("show");
+            } else {
+                scrollUpButton.classList.remove("show");
+            }
+        });
+
+        scrollUpButton.addEventListener("click", function() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
         });
     </script>
     @includeIf('layouts.portfolio.partials.js')

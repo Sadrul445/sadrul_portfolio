@@ -1,8 +1,7 @@
 <div class="container resume text-center" id="resume">
     <div class="resume-header text-center mb-4">
-        <h2 class="section-title mb-2">Resume</h2>
-        <p>To learn more about the sector and obtain first-hand experience with the company's duties and expectations.
-            As a quick learner, I want to broaden my skill set and increase my professional capabilities</p>
+        <h2 class="section-title mb-2">Career</h2>
+        <p>My Career Journey</p>
     </div>
     <div class="row">
         <div class="col-lg-6" data-aos="fade-up">
@@ -13,7 +12,7 @@
                         in e-commerce, APIs,Database Diagram Desigining and Agile teamwork. Skilled in Jira, SDLC, and
                         Git.</em></p>
                 <ul class="list-unstyled list-inline">
-                    <li><i class="fa-solid fa-location-dot fa-bounce fa-lg mx-2" style="color:#a65a5a;"></i> Lalkhan
+                    <li><i class="fa-solid fa-location-dot fa-bounce fa-lg mx-2" style="color:#0c4ace;"></i> Lalkhan
                         Bazar Chittagong,Bangladesh</li>
                     <li><i class="fa-solid fa-phone-volume fa-shake fa-lg mx-2"
                             style="color: #13cd76;"></i>+880-1683682400</li>
@@ -21,23 +20,25 @@
                         sadrulpashachowdhury.edu@gmail.com</li>
                 </ul>
             </div>
-
             <h3 class="resume-title">Education</h3>
             <div class="resume-item">
                 <h4>Bachelor of Science (BSc.) - <span style="font-size: 14px">Computer Science & Engineering</span>
                 </h4>
-                <h5 class="box-shadow">2021</h5>
-                <p><em>International Islamic University, Chittagong</em></p>
+                <h5 class="box-shadow">2017-2021</h5>
+                <p><em>International Islamic University Chittagong</em></p>
+                <p><i class="fa-solid fa-location-dot mx-2" style="color:#695aa5;"></i><em>Chittagong,Bangladesh</em></p>
             </div>
             <div class="resume-item">
                 <h4>Higher Secondary School Certificate - <span style="font-size: 14px">Science</span></h4>
-                <h5 class="box-shadow">2016</h5>
-                <p><em>South Asian College, Chittagong </em></p>
+                <h5 class="box-shadow">2014-2016</h5>
+                <p><em>South Asian College</em></p>
+                <p><i class="fa-solid fa-location-dot mx-2" style="color:#695aa5;"></i><em>Chittagong,Bangladesh</em></p>
             </div>
             <div class="resume-item">
                 <h4>Secondary School Certificate - <span style="font-size: 14px">Science</span></h4>
-                <h5 class="box-shadow">2014</h5>
-                <p><em>South Asian College, Chittagong </em></p>
+                <h5 class="box-shadow">2012-2014</h5>
+                <p><em>Chittagong Police Line School & College</em></p>
+                <p><i class="fa-solid fa-location-dot mx-2" style="color:#695aa5;"></i><em>Chittagong,Bangladesh</em></p>
             </div>
         </div>
         <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">

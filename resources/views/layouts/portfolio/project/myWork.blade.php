@@ -19,20 +19,18 @@
         <div class="overlay"></div>
         <div class="container">
             <span>
-                <p class="section-subtitle" style="position: relative;bottom:10rem;text-align:center">What I Did ?</p>
+                <p class="section-subtitle" style="position: relative;margin-top:2rem;text-align:center">What I Did ?</p>
             </span>
-            <div class=" text-center">
-                {{-- <p class="section-subtitle">What I Did ?</p> --}}
+            <div class="text-center">
                 <h3 id="grad1">Kabir Securities Website Backend</h3>
-                <p style="color: white ; font-size:14px">The Kabir Securities website Backend API is
-                    a secure and
+                <p id="grad1_p" class="p-3">The Kabir Securities website Backend API is a secure and
                     efficient system facilitating seamless communication between frontend and
                     server, handling user authentication, data retrieval, and form submissions.
                     Comprehensive documentation accompanies the API, detailing endpoints, methods,
                     and responses, ensuring smooth integration for developers and reliable user
                     experience.</p>
                 <p class="rounded py-2 mx-auto"
-                    style="font-weight:400;border-bottom:3px solid #695aa6 ; width:50%;color:#695aa6">
+                    style="font-weight:400;border-bottom:2px solid #695aa6 ; width:50%;color:#695aa6">
                     Technologies We Use: </p>
                 <div class="icons-container rounded py-2 box-shadow" id="box-grad">
                     <img src="{{ asset('assets/icons/laravel.svg') }}" alt="Laravel Icon" class="icon" />
@@ -40,57 +38,63 @@
                     <img src="{{ asset('assets/icons/sqlite.svg') }}" alt="sqlite Icon" class="icon" />
                     <img src="{{ asset('assets/icons/nextjs.svg') }}" alt="Next.js Icon" class="icon" />
                     <img src="{{ asset('assets/icons/github.svg') }}" alt="github Icon" class="icon" />
+                    <img src="{{ asset('assets/icons/vs-code.svg') }}" alt="vs-code Icon" class="icon" />
                 </div>
             </div>
-
+            <div class="card my-2" style="background: none;border:none">
+                <a href="https://www.kslbd.net/" class="btn btn-danger zoom box-shadow my-2 mx-auto">Live</a>
+            </div>
             <!-- row -->
             <div class="row my-4">
                 <div class="col-md-4 ">
                     <a href="#" class="portfolio-card box-shadow">
                         <img class="portfolio-card-img img-responsive rounded zoom image-modal-trigger "
-                            src="assets/projects/ksl/ksl_landing_p1.png" height="50%" width="100px">
+                            src="assets/projects/ksl/ksl_landing_p1.png">
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card box-shadow">
                         <img class="portfolio-card-img img-responsive rounded zoom image-modal-trigger"
-                            src="assets/projects/ksl/ksl_landing_p3.jpg" height="50%" width="100px">
+                            src="assets/projects/ksl/ksl_landing_p2.png">
                     </a>
                 </div>
                 <div class="col-md-4">
                     <a href="#" class="portfolio-card box-shadow">
                         <img class="portfolio-card-img img-responsive rounded zoom image-modal-trigger"
-                            src="assets/projects/ksl/single blog.png" height="50%" width="100px">
+                            src="assets/projects/ksl/single blog.png">
                     </a>
                     <a href="#" class="portfolio-card mt-4 box-shadow">
                         <img class="portfolio-card-img img-responsive rounded zoom image-modal-trigger"
-                            src="assets/projects/ksl/digital booth.png" height="50%" width="100px">
+                            src="assets/projects/ksl/digital booth.png">
                     </a>
                 </div>
             </div><!-- end of row -->
+            <div class="card bg-primary p-2">
+                @includeIf('layouts.portfolio.partials.hireMe')
+            </div>
         </div>
         <!-- The modal -->
         <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
+            <div class="modal-dialog modal-xl">
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="imageModalLabel">Kabir Securities Page</h5>
-                        <button type="button" class="btn btn-outline-secondary btn-close" data-bs-dismiss="modal"
-                            aria-label="Close">X</button>
+                        <button type="button" class="btn btn-outline-secondary btn-close rounded"
+                            data-bs-dismiss="modal" aria-label="Close">X</button>
                     </div>
                     <div class="modal-body">
                         <!-- Add an empty image element to display the image later -->
-                        <img class=" rounded w-100" id="enlargedImg" src="" alt="">
+                        <img class="rounded w-100" id="enlargedImg" src="" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- end of page header -->
-    <!-- footer -->
-    <div class="container">
-        @includeIf('layouts.portfolio.partials.footer')
-    </div> <!-- end of page footer -->
+        <!-- footer -->
+        <div class="container">
+            @includeIf('layouts.portfolio.partials.footer')
+        </div> <!-- end of page footer -->
 
     @includeIf('layouts.portfolio.partials.js')
     <script>

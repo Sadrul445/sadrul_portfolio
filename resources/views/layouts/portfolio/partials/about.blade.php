@@ -1,8 +1,8 @@
 <div class="container text-center">
     <!-- about wrapper -->
-    <div class="about">
+    <div class="about" id="about">
         <div class="about-img-holder">
-            <img src="assets/imgs/sadrul.jpg" class="about-img"
+            <img src="assets/imgs/sadrul.jpg" class="about-img zoom"
                 style="border-radius:10px;width:70%;box-shadow:5px 40px 50px 1px #666277">
         </div>
         <div class="about-caption">
@@ -13,13 +13,10 @@
                     class="link px-2"><i class="fa-brands fa-linkedin fa-beat fa-xl"></i></a>
                 <a href="https://www.facebook.com/your_username" class="link px-2"><i
                         class="fa-brands fa-facebook fa-beat fa-xl"></i></a>
-                {{-- <a href="https://www.google.com/your_profile" class="link px-2"><i class="ti-google"></i></a> --}}
                 <a href="https://www.whatsapp.com/your_username" class="link px-2"><i
                         class="fa-brands fa-whatsapp fa-beat fa-xl"></i></a>
                 <a href="https://github.com/Sadrul445" class="link px-2"><i
                         class="fa-brands fa-github fa-beat fa-xl"></i></a>
-                {{-- <a href="https://www.instagram.com/your_username" class="link px-2"><i class="ti-instagram"></i></a>
-                <a href="https://www.your_rss_feed_url.com" class="link px-2"><i class="ti-rss"></i></a> --}}
             </div>
             <p class="pt-4 text-justify">
                 Hello! I'm Tanim, a junior software engineer specialized in backend development using Laravel framework.
@@ -67,7 +64,7 @@
                     </ul>
                 </div>
             </div>
-            <button class="btn-rounded btn btn-outline-primary mt-4 box-shadow py-3 px-4" id="downloadButton"> <i
+            <button class="btn-rounded zoom btn btn-outline-primary mt-4 box-shadow py-3 px-4" id="downloadButton"> <i
                     class="fa-solid fa-download fa-bounce fa-lg"></i> Download CV</button>
         </div>
     </div><!-- end of about wrapper -->

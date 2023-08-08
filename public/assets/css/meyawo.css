@@ -32,7 +32,7 @@
     --success: #1bb74f;
     --info: #17a2b8;
     --warning: #ff6d02;
-    --danger: #ec185d;
+    --danger: #9c0000;
     --light: #f8f9fa;
     --dark: #212529;
     --breakpoint-xs: 0;
@@ -3130,19 +3130,19 @@ fieldset:disabled a.btn {
 
 .btn-danger {
     color: #fff;
-    background-color: #ec185d;
-    border-color: #ec185d;
+    background-color: #c40202;
+    border-color: #c40202;
 }
 
 .btn-danger:hover {
-    color: #fff;
-    background-color: #cd114e;
-    border-color: #c1104a;
+    color: #000000;
+    background-color: #f7a1a1;
+    border-color: #f7a1a1;
 }
 
 .btn-danger:focus,
 .btn-danger.focus {
-    box-shadow: 0 0 0 0.2rem rgba(239, 59, 117, 0.5);
+    box-shadow: 0 0 0 0.2rem #f7a1a1;
 }
 
 .btn-danger.disabled,
@@ -6880,7 +6880,8 @@ a.close.disabled {
 @media (min-width: 992px) {
     .modal-lg,
     .modal-xl {
-        max-width: 800px;
+        max-width: 300px;
+        max-height: 300px;
     }
 }
 
@@ -7191,9 +7192,10 @@ a.close.disabled {
     padding: 0.5rem 0.75rem;
     color: #212529;
 }
-
 .carousel {
     position: relative;
+    /* border-radius: 50%; */
+    border: 10px solid #695aa6;
 }
 
 .carousel.pointer-event {
@@ -7288,13 +7290,11 @@ a.close.disabled {
 
 .carousel-control-prev,
 .carousel-control-next {
+    border: none;
     position: absolute;
     top: 0;
     bottom: 0;
     z-index: 1;
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
     -webkit-align-items: center;
@@ -7304,12 +7304,13 @@ a.close.disabled {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center;
-    width: 15%;
-    color: #fff;
+    width: 10%;
+    /* height: 10%; */
     text-align: center;
     opacity: 0.5;
     -webkit-transition: opacity 0.15s ease;
     transition: opacity 0.15s ease;
+    background-color: var(--primary);
 }
 
 @media (prefers-reduced-motion: reduce) {
@@ -7346,13 +7347,13 @@ a.close.disabled {
     background: no-repeat 50% / 100% 100%;
 }
 
-.carousel-control-prev-icon {
+/* .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3e%3c/svg%3e");
-}
+} */
 
-.carousel-control-next-icon {
+/* .carousel-control-next-icon {
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3e%3cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3e%3c/svg%3e");
-}
+} */
 
 .carousel-indicators {
     position: absolute;
@@ -7369,8 +7370,9 @@ a.close.disabled {
     -ms-flex-pack: center;
     justify-content: center;
     padding-left: 0;
-    margin-right: 15%;
-    margin-left: 15%;
+    margin-right: 20%;
+    margin-left: 20%;
+    margin-bottom: 0.5%;
     list-style: none;
 }
 
@@ -7407,15 +7409,19 @@ a.close.disabled {
 }
 
 .carousel-caption {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border:round;
+    border-radius: 10%;
     position: absolute;
-    right: 15%;
+    right: 40%;
     bottom: 20px;
-    left: 15%;
+    left: 40%;
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
     color: #fff;
     text-align: center;
+    background: #695aa6;
 }
 
 @-webkit-keyframes spinner-border {
@@ -11613,8 +11619,8 @@ p {
         rgba(225, 223, 237, 0.7) 99%,
         rgba(225, 223, 237, 0.8) 100%
     );
-    -webkit-transition: all, 0.3s;
-    transition: all, 0.3s;
+    -webkit-transition: all, 5s;
+    transition: all, .1s;
     width: 0;
     height: 0;
     border-radius: 50%;
@@ -12046,7 +12052,7 @@ pre .code {
 }
 
 .custom-navbar .logo {
-    font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1300 - 300)));
+    font-size: calc(20px + (32 - 20) * ((100vw - 300px) / (1300 - 300)));
     text-decoration: none;
     color: #fff;
 }
@@ -12534,13 +12540,42 @@ pre .code {
 }
 
 .header .header-content .header-subtitle {
-    font-size: calc(10px + (22 - 10) * ((100vw - 300px) / (1300 - 300)));
-    letter-spacing: calc(1px + (7 - 1) * ((100vw - 300px) / (1300 - 300)));
+    font-size: calc(10px + (18 - 12) * ((100vw - 300px) / (1300 - 300)));
+    letter-spacing: calc(1px + (2 - 1) * ((100vw - 300px) / (1300 - 300)));
     opacity: 0.8;
     margin-top: -10px;
     margin-bottom: 20px;
 }
+/* heading = header-subtitle  */
+#typing-text {
+    color: #333;
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 1px solid #333; /* This creates the typing cursor effect */
+    animation: typing 3s steps(40), blink-caret 0.5s step-end infinite;
+}
 
+/* Keyframes for the typing effect */
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+/* Keyframes for the blinking cursor effect */
+@keyframes blink-caret {
+    from,
+    to {
+        border-color: transparent;
+    }
+    25% {
+        border-right: 4px solid #695aa6;
+    }
+}
 .header .header-content .btn {
     position: relative;
     margin-top: 20px;
@@ -12585,7 +12620,10 @@ pre .code {
         background-size: cover;
     }
     .header-content {
-        padding-left: calc(100% / 5) !important;
+        padding-left: calc(25% / 5) !important;
+    }
+    #text-typing{
+        font-size: 20px;
     }
 }
 
@@ -12694,17 +12732,17 @@ pre .code {
     margin-top: 20px;
     margin-bottom: 20px;
     color: #695aa6;
-  }
-  
-  .resume .resume-item {
+}
+
+.resume .resume-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
     border-left: 2px solid #1f5297;
     position: relative;
     text-align: left;
-  }
-  
-  .resume .resume-item h4 {
+}
+
+.resume .resume-item h4 {
     line-height: 18px;
     font-size: 16px;
     font-weight: 700;
@@ -12713,43 +12751,43 @@ pre .code {
     color: black;
     opacity: 0.6;
     margin-bottom: 10px;
-  }
-  
-  .resume .resume-item h5 {
+}
+
+.resume .resume-item h5 {
     font-size: 16px;
     background: #e4edf9;
     padding: 5px 15px;
     display: inline-block;
     font-weight: 600;
     margin-bottom: 10px;
-  }
-  @media (max-width: 767.98px) {
-    .resume .resume-title{
+}
+@media (max-width: 767.98px) {
+    .resume .resume-title {
         font-size: 16px;
     }
-    .resume .resume-item h4{
+    .resume .resume-item h4 {
         font-size: 14px;
     }
-    .resume .resume-item p{
+    .resume .resume-item p {
         font-size: 12px;
     }
-    .resume .resume-item ul li{
+    .resume .resume-item ul li {
         font-size: 12px;
     }
-  }
-  .resume .resume-item ul {
+}
+.resume .resume-item ul {
     padding-left: 20px;
-  }
-  
-  .resume .resume-item ul li {
+}
+
+.resume .resume-item ul li {
     padding-bottom: 10px;
-  }
-  
-  .resume .resume-item:last-child {
+}
+
+.resume .resume-item:last-child {
     padding-bottom: 0;
-  }
-  
-  .resume .resume-item::before {
+}
+
+.resume .resume-item::before {
     content: "";
     position: absolute;
     width: 16px;
@@ -12759,8 +12797,8 @@ pre .code {
     top: 0;
     background: #fff;
     border: 2px solid #1f5297;
-  }
-  
+}
+
 /* sections */
 .section {
     padding: 70px 10px;
@@ -12790,13 +12828,14 @@ pre .code {
 
 /* -----------custom-css----------- */
 #grad1 {
-    color: #fdd2d2;
-    background: -webkit-linear-gradient(#e6e5e9, #2e1f68);
+    /* color: #fdd2d2; */
+    /* background: #050506; */
+    background: linear-gradient(#8c8e90,#6f42c1);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    /* margin-top: 10rem; */
 }
 #box-grad {
-    background-color: red; /* For browsers that do not support gradients */
     background-image: linear-gradient(#e6e5e9, #2e1f68);
 }
 .zoom {
@@ -12844,19 +12883,10 @@ pre .code {
 }
 .ksl-bg {
     position: relative;
-    height: 220vh;
+    height: 130vh; /* Adjusted height to cover the entire viewport */
     min-height: 200px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: -webkit-flex;
     display: flex;
-    -webkit-box-align: center;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
     align-items: center;
-    -webkit-box-pack: center;
-    -webkit-justify-content: center;
-    -ms-flex-pack: center;
     justify-content: center;
     background-image: url(../imgs/header.jpg);
     background-size: cover;
@@ -12868,8 +12898,38 @@ pre .code {
     justify-content: center; /* Center the icons horizontally within the container */
     background-color: white;
     opacity: 0.8;
+    display: block;
 }
-
+.icons-container img{
+    width: 40px;
+    height: 40px;
+}
+@media (max-width: 767.98px) {
+    .icons-container img{
+        width: 25px;
+        height: 25px;
+    }
+    .ksl-bg {
+        position: relative;
+        height: 230vh; /* Adjusted height to cover the entire viewport */
+        min-height: 210vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url(../imgs/header.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+    }
+    #grad1{
+        font-size: 22px;
+    }
+    #grad1_p{
+        font-size: 14px;
+        color: white ; 
+        background-color:rgba(51, 49, 49, 0.158);
+    }
+}
 .icon {
     width: 50px; /* Adjust the width of the icons as needed */
     height: 50px; /* Adjust the height of the icons as needed */
@@ -12914,4 +12974,57 @@ pre .code {
         max-width: 33.33%; /* Three columns in a row for small screens */
         text-align: center; /* Center the content within each column */
     }
-  }
+}
+
+/* CSS for scroll-up button */
+.scroll-up-btn {
+    position: fixed;
+    bottom: 100px;
+    right: 100px;
+    display: none;
+    background-color: #695aa6;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
+}
+.scroll-up-btn:hover {
+    background-color: black;
+    color: white;
+}
+.scroll-up-btn.show {
+    display: block;
+}
+/* scrolldown */
+@media (max-width: 767.98px) {
+    .scroll-up-btn {
+        position: fixed;
+        bottom: 40px;
+        right: 20px;
+        display: none;
+        background-color: #695aa6;
+        color: #fff;
+        border: none;
+        padding: 15px;
+        border-radius: 50%;
+        cursor: pointer;
+        font-size: 20px;
+    }
+    .scroll-up-btn.show {
+        display: block;
+    }
+    .scroll-up-btn:hover {
+        background-color: black;
+        color: white;
+    }
+    .header-subtitle p {
+        font-size: 10px;
+        letter-spacing: calc(1px + (2 - 1) * ((100vw - 300px) / (1300 - 300)));
+        opacity: 0.8;
+        margin-top: -10px;
+        margin-bottom: 20px;
+    }
+}
+
