@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\ContactController;
 use App\Http\Controllers\DownloadController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ProjectController;
@@ -32,5 +33,9 @@ Route::middleware('auth')->group(function () {
 
 Route::get('/download-cv',[DownloadController::class])->name('download.cv');
 Route::get('/project',[ProjectController::class,'index'])->name('project.index');
-
+//contact
+// Route::prefix('contact')->group(function () {
+//     Route::get('/create', [ContactController::class, 'create'])->name('contact.create');
+//     Route::post('/store', [ContactController::class, 'store'])->name('contact.store');
+// });
 require __DIR__.'/auth.php';

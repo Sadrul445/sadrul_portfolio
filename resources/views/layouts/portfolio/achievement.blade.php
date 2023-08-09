@@ -21,10 +21,10 @@
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 rounded zoom image-modal-trigger" src="assets/certificates/Sheikhkamal_certificate -sadrul.jpg">
-            {{-- <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>Some representative placeholder content for the second slide.</p>
-            </div> --}}
+            <div class="carousel-caption d-none d-md-block">
+              <a href="https://drive.google.com/file/d/1t2WRfvbC7USwqGg2nL0wQazp9rdGh7rq/view?usp=drivesdk" style="color: white">Sheikh Kamal IT Training Certificate</a>
+            </div>
+              
           </div>
           <div class="carousel-item">
             <img class="d-block w-100 rounded zoom image-modal-trigger" src="assets/certificates/FreeCodeCamp_Certificates.jpg">

@@ -1,4 +1,4 @@
-{{-- @extends('layouts.dashboard.master') --}}
+@extends('layouts.portfolio.master')
 {{-- @push('css')
 @endpush
 @includeIf('layouts.dashboard.partials.css')
@@ -143,30 +143,42 @@
         </div>
 
         <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="{{-- {{ route('contact.store') }} --}}" method="POST" enctype="multipart/form-data" role="form" class="php-email-form">
+                @csrf
                 <div class="row">
                     <div class="form-group col-md-6">
                         <label for="name">Your Name</label>
-                        <input type="text" name="name" class="form-control" id="name" required>
+                        <input type="text" name="name" class="form-control" id="name">
                     </div>
                     <div class="form-group col-md-6">
                         <label for="name">Your Email</label>
-                        <input type="email" class="form-control" name="email" id="email" required>
+                        <input type="email" class="form-control" name="email" id="email">
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="name">Subject</label>
-                    <input type="text" class="form-control" name="subject" id="subject" required>
+                    <input type="text" class="form-control" name="subject" id="subject">
                 </div>
                 <div class="form-group">
                     <label for="name">Message</label>
-                    <textarea class="form-control" name="message" rows="10" required></textarea>
+                    <textarea class="form-control" name="message" rows="10"></textarea>
                 </div>
-                <div class="my-3">
+                {{-- <div class="my-3">
                     <div class="loading">Loading</div>
-                    <div class="error-message"></div>
-                    <div class="sent-message">Your message has been sent. Thank you!</div>
-                </div>
+                    @if (session()->has('create'))
+                        <div class="sent-message">
+                            <div class="alert alert-success">
+                                {{ session('create') }}
+                            </div>
+                        </div>
+                    @else
+                        <div class="error-message">
+                            <div class="alert alert-danger">
+                                
+                            </div>
+                        </div>
+                    @endif
+                </div> --}}
                 <div class="text-center"><button class="btn btn-primary" type="submit">Send Message</button></div>
             </form>
         </div>
