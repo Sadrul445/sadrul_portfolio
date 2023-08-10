@@ -1,4 +1,3 @@
-@extends('layouts.portfolio.master')
 {{-- @push('css')
 @endpush
 @includeIf('layouts.dashboard.partials.css')
@@ -139,11 +138,10 @@
                         referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
             </div>
-
         </div>
 
         <div class="col-lg-6 mt-5 mt-lg-0 d-flex align-items-stretch">
-            <form action="{{-- {{ route('contact.store') }} --}}" method="POST" enctype="multipart/form-data" role="form" class="php-email-form">
+            <form action="{{ route('contact.store') }}" method="POST" enctype="multipart/form-data" role="form" class="php-email-form">
                 @csrf
                 <div class="row">
                     <div class="form-group col-md-6">
@@ -157,7 +155,7 @@
                 </div>
                 <div class="form-group">
                     <label for="name">Subject</label>
-                    <input type="text" class="form-control" name="subject" id="subject">
+                    <input type="text" class="form-control" name="reason" id="subject">
                 </div>
                 <div class="form-group">
                     <label for="name">Message</label>

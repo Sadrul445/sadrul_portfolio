@@ -19,7 +19,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('layouts.portfolio.master');
-});
+})->name('/');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -34,8 +34,8 @@ Route::middleware('auth')->group(function () {
 Route::get('/download-cv',[DownloadController::class])->name('download.cv');
 Route::get('/project',[ProjectController::class,'index'])->name('project.index');
 //contact
-// Route::prefix('contact')->group(function () {
-//     Route::get('/create', [ContactController::class, 'create'])->name('contact.create');
-//     Route::post('/store', [ContactController::class, 'store'])->name('contact.store');
-// });
+Route::prefix('contact')->group(function () {
+    Route::get('/', [ContactController::class, 'create'])->name('contact.create');
+    Route::post('/store', [ContactController::class, 'store'])->name('contact.store');
+});
 require __DIR__.'/auth.php';
