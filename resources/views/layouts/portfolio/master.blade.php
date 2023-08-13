@@ -35,11 +35,11 @@
         @includeIf('layouts.portfolio.skills')
     </section>
     {{-- end of skill section --}}
-    {{-- resume section --}}
-    <section class="section pt-0">
+    {{-- resume/career section --}}
+    <section class="section pt-0" id="career">
         @includeIf('layouts.portfolio.resume')
     </section>
-    {{-- end of resume section --}}
+    {{-- end of resume/career section --}}
     {{-- achievement section --}}
     <section class="section pt-0" id="achievement">
         @includeIf('layouts.portfolio.achievement')
@@ -51,7 +51,7 @@
     </section><!-- end of service section -->
 
     <!-- project section -->
-    <section class="section" id="projects">
+    <section class="section" id="project">
         @includeIf('layouts.portfolio.partials.project')
         <!-- end of container -->
     </section> <!-- end of projects section -->

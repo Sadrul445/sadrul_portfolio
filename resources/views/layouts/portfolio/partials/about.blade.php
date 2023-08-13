@@ -48,7 +48,7 @@
                 <div class="col-lg-7 py-2">
                     <ul>
                         <li class="py-2 list-unstyled list-inline"><i class="fa-solid fa-angle-right fa-sm"
-                                style="color: #6f42c1;"></i> <strong class="text-primary">Age:</strong> <span>24</span>
+                                style="color: #6f42c1;"></i> <strong class="text-primary">Age:</strong> <span>23</span>
                         </li>
                         <li class="py-2 list-unstyled list-inline"><i class="fa-solid fa-angle-right fa-sm"
                                 style="color: #6f42c1;"></i> <strong class="text-primary">Degree:</strong> <span>B.Sc.
