@@ -19,15 +19,15 @@ class ContactController extends Controller
         $contact = new Contact();
         $contact->name = $request->input('name');
         $contact->email = $request->input('email');
-        $contact->subject = $request->input('subject');
-        $contact->message = $request->input('message');
+        $contact->reason = $request->input('reason');
+        $contact->msg = $request->input('msg');
         $contact->save();
 
         Mail::to($contact->email)->send(new ContactMail(
             $contact->name,
             $contact->email,
-            $contact->subject,
-            $contact->message,
+            $contact->reason,
+            $contact->msg,
         ));
         return redirect('/');
     }

@@ -11477,7 +11477,15 @@ h6 {
     font-family: "Baloo Paaji", cursive;
     color: #695aa6;
 }
-
+.contact-title {
+    margin-top: 20px;
+    font-size: calc(14px + (18 - 14) * ((100vw - 300px) / (1300 - 300)));
+}
+.contact-label {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: bold;
+}
 .my-font {
     font-family: "Baloo Paaji", cursive;
 }
@@ -13025,6 +13033,9 @@ pre .code {
         opacity: 0.8;
         margin-top: -10px;
         margin-bottom: 20px;
+    }
+    iframe{
+        width:max-content;
     }
 }
 

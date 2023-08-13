@@ -15,26 +15,34 @@ class ContactMail extends Mailable
     public $name;
     public $email;
     public $reason;
-    public $message;
+    public $msg;
     /**
      * Create a new message instance.
      */
     public function build()
     {
-        return $this->markdown('emails.contact_email')
-            ->subject('Sadrul Portfolio - Contact With Me');
+        return $this->subject('Sadrul Portfolio - Your inquiry has been recieved')
+                    ->view('emails.contact_email')
+                    ->with(
+                        [
+                            'name' =>$this->name,
+                            'email'=>$this->email,
+                            'reason'=>$this->reason,
+                            'msg'=>$this->msg
+                        ]
+                        );
     }
     public function __construct(
-    $name,
-    $email,
-    $reason,
-    $message
+        $name,
+        $email,
+        $reason,
+        $msg
     )
     {
         $this->name = $name;
         $this->email = $email;
         $this->reason = $reason;
-        $this->message = $message;
+        $this->msg = $msg;
     }
 
     /**
@@ -43,19 +51,19 @@ class ContactMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Contact Mail',
+            subject: 'Mail Confirmation',
         );
     }
 
     /**
      * Get the message content definition.
      */
-    public function content(): Content
-    {
-        return new Content(
-            view: 'view.name',
-        );
-    }
+    // public function content(): Content
+    // {
+    //     return new Content(
+    //         view: 'view.name',
+    //     );
+    // }
 
     /**
      * Get the attachments for the message.

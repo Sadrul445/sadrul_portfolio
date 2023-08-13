@@ -11,10 +11,11 @@
             <div class="social-links text-center m-auto ml-sm-auto py-4 border-bottom w-100">
                 <a href="https://www.linkedin.com/in/sadrulpashachowdhury?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BICn5pJoLQceQgMEDCFQKWw%3D%3D"
                     class="link px-2"><i class="fa-brands fa-linkedin fa-beat fa-xl"></i></a>
-                <a href="https://www.facebook.com/your_username" class="link px-2"><i
+                <a href="https://www.facebook.com/sadrultanim/" class="link px-2"><i
                         class="fa-brands fa-facebook fa-beat fa-xl"></i></a>
-                <a href="https://www.whatsapp.com/your_username" class="link px-2"><i
+                <a href="javascript:void(0);" class="link px-2" id="whatsapp-icon"><i
                         class="fa-brands fa-whatsapp fa-beat fa-xl"></i></a>
+                        {{-- https://chat.whatsapp.com/DtuuluBNj1r8AmosVEqY3l --}}
                 <a href="https://github.com/Sadrul445" class="link px-2"><i
                         class="fa-brands fa-github fa-beat fa-xl"></i></a>
             </div>
@@ -69,3 +70,39 @@
         </div>
     </div><!-- end of about wrapper -->
 </div>
+<script>
+    // Get the WhatsApp icon element
+    const whatsappIcon = document.getElementById("whatsapp-icon");
+
+    // Define the WhatsApp number (replace with the actual number)
+    const whatsappNumber = "01683682400";
+
+    // Add a click event listener to the WhatsApp icon
+    whatsappIcon.addEventListener("click", () => {
+        // Create a temporary input element
+        const tempInput = document.createElement("input");
+        // Set the value of the input element to the WhatsApp number
+        tempInput.value = whatsappNumber;
+        // Append the input element to the document
+        document.body.appendChild(tempInput);
+        // Select the content of the input element
+        tempInput.select();
+        // Copy the selected content to the clipboard
+        document.execCommand("copy");
+        // Remove the temporary input element
+        document.body.removeChild(tempInput);
+
+        // Show a Bootstrap tooltip on the WhatsApp icon
+        $(whatsappIcon).tooltip({
+            title: "WhatsApp number copied!",
+            placement: "top",
+            trigger: "manual"
+        });
+        // Show the tooltip
+        $(whatsappIcon).tooltip("show");
+        // Hide the tooltip after a short delay
+        setTimeout(() => {
+            $(whatsappIcon).tooltip("hide");
+        }, 2000);
+    });
+</script>

@@ -11,7 +11,7 @@
                 <a class="link" href="#resume">Career</a>
             </li>
             <li class="item">
-                <a class="link" href="#portfolio">Portfolio</a>
+                <a class="link" href="#project">Portfolio</a>
             </li>
             <li class="item">
                 <a class="link" href="#testmonial">Testmonial</a>
